@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXProgressSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="830.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mafiadelprimobanco.focusproject.HomeController">
+   <children>
+      <MFXProgressSpinner fx:id="progressBarTime" disable="true" layoutX="170.0" layoutY="130.0" maxHeight="200.0" maxWidth="200.0" prefHeight="384.0" prefWidth="517.0" startingAngle="90.0" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="143.0" AnchorPane.topAnchor="130.0" />
+      <ImageView fx:id="treeImageViewer" layoutX="415.0" layoutY="300.0" pickOnBounds="true" />
+      <Label alignment="CENTER" layoutX="233.0" layoutY="60.0" prefHeight="17.0" prefWidth="125.0" text="00:00" AnchorPane.leftAnchor="233.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <MFXComboBox layoutX="39.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="20.0" />
+      <MFXComboBox fx:id="tagComboBox" layoutX="403.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" selectable="true" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="20.0" />
+      <MFXButton layoutX="233.0" layoutY="553.0" prefHeight="40.0" prefWidth="125.0" text="Avvia" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="233.0" AnchorPane.rightAnchor="206.0" />
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </padding>
+</AnchorPane>

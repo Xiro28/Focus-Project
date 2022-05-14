@@ -4,19 +4,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 <?import org.kordamp.ikonli.javafx.StackedFontIcon?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #D4FFCC;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mafiadelprimobanco.focusproject.BaseController">
+<AnchorPane depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mafiadelprimobanco.focusproject.BaseController">
    <children>
-      <BorderPane layoutX="240.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane fx:id="BaseBorderPane" layoutX="240.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(0,20,0,0.5);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
-            <AnchorPane minWidth="70.0" prefWidth="70.0" style="-fx-background-color: #FFF;" BorderPane.alignment="TOP_LEFT">
+            <AnchorPane minWidth="70.0" prefWidth="70.0" style="-fx-background-color: #FFF1; -fx-effect: dropshadow(gaussian,rgba(0,45,70,0.3),1,0.4,3,3);" BorderPane.alignment="TOP_LEFT">
                <children>
                   <VBox prefHeight="280.0" prefWidth="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavHomeClick" prefHeight="70.0" prefWidth="70.0" text="Home" textAlignment="CENTER">
+                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavHomeClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="Home" textAlignment="CENTER">
                            <graphic>
                               <StackedFontIcon>
                                  <children>
@@ -24,8 +26,24 @@
                                  </children>
                               </StackedFontIcon>
                            </graphic>
+                           <rippleColor>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </rippleColor>
                         </MFXButton>
-                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavProgressClick" prefHeight="70.0" prefWidth="70.0" text="Progress" textAlignment="CENTER">
+                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavProgressClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="Progress" textAlignment="CENTER">
                            <graphic>
                               <StackedFontIcon>
                                  <children>
@@ -34,7 +52,7 @@
                               </StackedFontIcon>
                            </graphic>
                         </MFXButton>
-                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxWidth="70.0" minWidth="70.0" onAction="#onNavStatisticsClick" prefHeight="70.0" prefWidth="70.0" text="Statistics" textAlignment="CENTER">
+                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxWidth="70.0" minWidth="70.0" onAction="#onNavStatisticsClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="Statistics" textAlignment="CENTER">
                            <graphic>
                               <StackedFontIcon>
                                  <children>
@@ -43,7 +61,7 @@
                               </StackedFontIcon>
                            </graphic>
                         </MFXButton>
-                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavTagClick" prefHeight="70.0" prefWidth="70.0" text="Tags" textAlignment="CENTER">
+                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavTagClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="Tags" textAlignment="CENTER">
                            <graphic>
                               <StackedFontIcon>
                                  <children>
@@ -56,7 +74,7 @@
                   </VBox>
                   <VBox alignment="BOTTOM_LEFT" prefHeight="210.0" prefWidth="70.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <children>
-                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavInfoClick" prefHeight="70.0" prefWidth="70.0" text="Info" textAlignment="CENTER">
+                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavInfoClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="Info" textAlignment="CENTER">
                            <graphic>
                               <StackedFontIcon>
                                  <children>
@@ -65,7 +83,7 @@
                               </StackedFontIcon>
                            </graphic>
                         </MFXButton>
-                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavUserClick" prefHeight="70.0" prefWidth="70.0" text="User" textAlignment="CENTER">
+                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavUserClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="User" textAlignment="CENTER">
                            <graphic>
                               <StackedFontIcon>
                                  <children>
@@ -74,7 +92,7 @@
                               </StackedFontIcon>
                            </graphic>
                         </MFXButton>
-                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavSettingsClick" prefHeight="70.0" prefWidth="70.0" text="Settings" textAlignment="CENTER">
+                        <MFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#onNavSettingsClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="Settings" textAlignment="CENTER">
                            <graphic>
                               <StackedFontIcon>
                                  <children>
