@@ -14,7 +14,7 @@ public class MainApplication extends Application {
 	public void start(Stage stage) throws IOException {
 		FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("Base-view.fxml"));
 		Scene scene = new Scene(fxmlLoader.load(), 1024, 600);
-		stage.setFullScreen(true);
+		//stage.setFullScreen(true);
 		stage.setScene(scene);
 
 		scene.getStylesheets().add("style.css");

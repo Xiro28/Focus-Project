@@ -48,7 +48,7 @@ public class BaseController {
 	@FXML
 	void initialize() {
 		BaseBorderPane.setCenter(SceneHandler.getInstance().loadScene("Home-view.fxml"));
-		ImageLoader.getInstance().loadImage("albero.png");
+		//ImageLoader.getInstance().loadImage("albero.png");
 	}
 	
 	
